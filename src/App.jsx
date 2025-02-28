@@ -3,6 +3,7 @@ import './App.css'
 import Home from './components/home'
 import About from './components/About'
 import MyProject from './components/MyProject'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -17,10 +18,10 @@ function App() {
           <div className="routes flex gap-4  ">
             <Link className='hover:scale-[110%] duration-350' to='/'>Home</Link>
             <Link className='hover:scale-[110%] duration-350' to='/AboutMe'>AboutMe</Link>
-            <Link className='hover:scale-[110%] duration-350' to='/MyProject'>MyProject</Link>
+            <Link className='hover:scale-[105%] duration-350' to='/MyProject'>MyProject</Link>
           </div>
-          <div>
-            contacts
+          <div className='flex'>
+            <Link className='hover:scale-[110%] duration-300' to="/Contact">MyContact</Link>
           </div>
         </div>
       </nav>
@@ -30,7 +31,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/aboutme' element={<About />}/>
         <Route path='/myproject' element={<MyProject />}/>
-        <Route/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       <footer className='flex justify-center my-5 items-center'>
         all copyrights reserved
