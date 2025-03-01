@@ -3,7 +3,7 @@ import React from 'react'
 
 const Home = () => {
     return (
-        <div className="main   w-full justify-center items-center md:flex  py-2 shadow-lg h-[530px]">
+        <div className="main   w-full justify-center items-center md:flex  py-2 shadow-lg h-auto">
             <div className="info  md:w-[50%] md:shrink-0 h-auto flex flex-col justify-center items-center text-center md:px-15 py-6 md:py-18 ">
                 <div className="block  h-auto  py-9">
                     <div className="intro text-4xl md:text-5xl px-10  py-5 text-center  ">
@@ -20,9 +20,9 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className="img md:w-[50%] h-auto flex justify-center">
+            <div className="img md:w-[50%] p-8 h-auto flex justify-center">
                 <Link className="w-fit h-auto rounded-br-4xl rounded-tl-4xl overflow-hidden cursor-pointer hover:shadow-2xl shadow-amber-300/100 hover:scale-[105%] duration-1000 " to="/AboutMe">
-                    <img className="w-[290px] h-[300px] md:w-[350px] md:h-[350px]" src="src\assets\MyPicForGitHubProfile.jpg" alt="" />
+                    <img className="w-[290px] h-[300px] md:w-[350px] md:h-[350px]" src="\MyPicForGitHubProfile.jpg" alt="" />
                 </Link>
             </div>
         </div>
