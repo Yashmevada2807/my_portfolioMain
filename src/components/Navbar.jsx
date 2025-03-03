@@ -10,12 +10,12 @@ const Navbar = () => {
     }, [location.pathname]);
 
     return (
-        <nav className="w-full p-3 bg-black">
+        <nav className=" p-3 bg-black">
             <div className="text-white flex justify-between items-center">
-                <div className="logo font-bold text-2xl px-3">Yash.me
+                <div className="logo w-full sm:w-auto flex  justify-center sm:justify-start  font-bold text-2xl px-3">Yash.me
 
                 </div>
-                  <div className="routes flex gap-6">
+                  <div className=" flex max-sm:hidden  text-white  gap-x-5 p-1 ">
                     {[
                         {Name: "Home" , path: "/" },
                         {Name: "AboutMe" , path: "/aboutme" },
@@ -33,7 +33,7 @@ const Navbar = () => {
                     </Link>
                     ))} 
                 </div> 
-                <div className="flex px-3">
+                <div className=" max-sm:hidden px-3">
                     <Link
                         to="/Contacts"
                         onClick={() => setActiveLink("/Contacts")}
