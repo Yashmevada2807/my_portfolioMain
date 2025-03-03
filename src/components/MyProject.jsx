@@ -1,9 +1,16 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 const MyProject = () => {
   return (
-    <div className=' w-auto flex py-2 shadow-2xl h-[530px]'>
-      this is my project page
+    <div className=' w-auto px-15  grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 justify-center py-6 shadow-2xl'>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
     </div>
   )
 }
