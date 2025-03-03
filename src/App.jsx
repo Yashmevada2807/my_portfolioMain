@@ -6,7 +6,6 @@ import About from './components/About'
 import MyProject from './components/MyProject'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 
 function App() {
   return (
