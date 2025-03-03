@@ -8,7 +8,7 @@ const Home = () => {
                 <div className="info  md:w-[50%] h-auto flex flex-col justify-center items-center text-center px-5 md:px-8  py-6 md:py-10 ">
                     <div className="block  h-full w-auto md:px-2 py-4">
                         <div className="intro font-bold text-3xl sm:text-4xl md:text-5xl px-6 md:px-10  py-5 text-center max-w-lg ">
-                            Hello,I'm Yash, frontEnd Developer based in US.
+                            Hello,I'm Yash, frontEnd Developer based in USA.
                         </div>
                         <div className="about text-sm md:py-2 px-6 text-gray-600 max-w-md">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium similique aliquid magni aperiam est, quo aut animi officiis excepturi.
