@@ -11,7 +11,7 @@ const Home = () => {
                             Hello,I'm Yash, frontEnd Developer based in USA.
                         </div>
                         <div className="about text-sm md:py-2 px-6 text-gray-600 max-w-md">
-                            I Love You Sooooooooooooo Much Seluuu 
+                        I am a tech enthusiast and creative problem solver with a strong foundation in frontend development, specializing in JavaScript, React, and Flutter. Passionate about building seamless digital experiences, I am expanding my expertise into backend, full-stack, and game development with technologies like Node.js, Express.js, C#, C++, and Dart. With a deep interest in scalable solutions and modern development practices, I strive to create efficient, user-friendly applications that push the boundaries of technology. 
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row text-center w-full sm:w-auto gap-8 pt-5 ">
