@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='w-full  flex relative overflow-hidden'>
-            <div className="py-4  w-full flex justify-center  animate-marquee">
+        <footer className='sm:w-auto  flex relative overflow-hidden'>
+            <div className="py-4  w-auto flex justify-center  animate-marquee">
                 {["HTML",
                     "CSS",
                     "JavaScript",
