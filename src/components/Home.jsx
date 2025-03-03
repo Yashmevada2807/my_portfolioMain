@@ -11,7 +11,7 @@ const Home = () => {
                             Hello,I'm Yash, frontEnd Developer based in USA.
                         </div>
                         <div className="about text-sm md:py-2 px-6 text-gray-600 max-w-md">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis praesentium similique aliquid magni aperiam est, quo aut animi officiis excepturi.
+                            I Love You Sooooooooooooo Much Seluuu 
                         </div>
                     </div>
                     <div className="flex flex-col sm:flex-row text-center w-full sm:w-auto gap-8 pt-5 ">
