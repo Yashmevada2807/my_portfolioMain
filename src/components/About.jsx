@@ -4,7 +4,7 @@ import DarkBtn from './DarkBtn'
 const About = () => {
   return (
     <div className=' w-full flex py-2 shadow-2xl '>
-      <DarkBtn/>
+      this is About page
     </div>
   )
 }
