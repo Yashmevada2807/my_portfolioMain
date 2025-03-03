@@ -4,7 +4,7 @@ const ProjectCard = () => {
   return (
     <div className='h-auto max-w-[400px] min-w-[240px] border-[1px] my-5.5 sm:m-3 md:mx-3 border-neutral-300 block justify-center  rounded-xl hover:scale-100 hover:shadow-xl duration-700'>
       <div className="projectImg overflow-hidden border-[1px]  border-neutral-300 rounded-lg w-fit h-auto my-2 mx-2">
-        <img className='w-full h-auto' src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWxsbXR2eTdqbXQ0bzhnbzIzaWJjZW4yYXdvcmdsdnFmMjhtYXl5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3KC2jD2QcBOSc/giphy.gif" alt="" />
+        <img className='w-full h-auto' src="\Random.webp" alt="" />
       </div>
       <div className="content border-t-[1px] border-neutral-300  py-2 items-center flex justify-between">
         <div className="name  font-semibold text-xl px-4">

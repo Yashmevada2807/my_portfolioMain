@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 const Home = () => {
     return (
-        <div className=" w-full overflow-hidden  ">
+        <div className=" w-full overflow-hidden ">
             <div className="main w-full  border-zinc-500 justify-center items-center sm:flex flex-col sm:flex-row py-2  h-auto">
                 <div className="info  md:w-[50%] h-auto flex flex-col justify-center items-center text-center px-5 md:px-8  py-6 md:py-10 ">
                     <div className="block  h-full w-auto md:px-2 py-4">
@@ -41,18 +41,3 @@ const Home = () => {
 }
 
 export default Home
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
