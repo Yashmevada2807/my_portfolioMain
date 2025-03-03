@@ -19,7 +19,7 @@ function App() {
         <Route path='/myprojects' element={<MyProject />}/>
         <Route path='/contacts' element={<Contact />}/>
       </Routes>
-      <Footer/>
+      
     </>
     </Router>
   )
