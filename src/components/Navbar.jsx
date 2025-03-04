@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import DarkBtn from "./DarkBtn";
 
 const Navbar = () => {
     const location = useLocation();
@@ -11,9 +12,9 @@ const Navbar = () => {
     }, [location.pathname]);
 
     return (
-        <nav className=" p-3 bg-black">
+        <nav className=" p-3 bg-black dark:bg-gray-950 dark:border-b dark:border-zinc-500">
             <div className="text-white flex justify-between items-center">
-                <div className="logo w-full sm:w-auto flex  justify-center sm:justify-start  font-bold text-2xl px-3">Yash.me
+                <div className="logo w-full sm:w-auto flex  justify-center sm:justify-start  font-bold text-2xl px-3 ">Yash.me
                 </div>
                 {/* for medium and large screen */}
                 <div className=" flex max-sm:hidden  text-white  gap-x-5 p-1 ">
@@ -34,7 +35,8 @@ const Navbar = () => {
                         </Link>
                     ))}
                 </div>
-                <div className=" max-sm:hidden px-3">
+                <div className=" flex max-sm:hidden  p-2 gap-4">
+                    <DarkBtn/>
                     <Link
                         to="/Contacts"
                         onClick={() => setActiveLink("/Contacts")}

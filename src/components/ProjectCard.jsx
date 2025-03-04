@@ -2,11 +2,11 @@ import React from 'react'
 
 const ProjectCard = () => {
   return (
-    <div className='h-auto max-w-[400px] min-w-[300px] border-[1px] my-5.5 sm:m-3 md:mx-3 border-neutral-300 block justify-center  rounded-xl hover:scale-100 hover:shadow-xl duration-700'>
-      <div className="projectImg overflow-hidden border-[1px]  border-neutral-300 rounded-lg w-fit h-auto my-2 mx-2">
+    <div className='h-auto max-w-[400px] min-w-[240px] border-[1px] my-5.5 m-1 sm:m-2 md:mx-3 border-neutral-300 block justify-center  rounded-xl hover:scale-100 hover:shadow-lg duration-700 dark:bg-gray-800 dark:border-zinc-700 dark:shadow-gray-600'>
+      <div className="projectImg overflow-hidden border-[1px]  border-neutral-300 dark:border-zinc-500 rounded-lg w-fit h-auto my-2 mx-2">
         <img className='w-full h-auto' src="\Random.webp" alt="" />
       </div>
-      <div className="content border-t-[1px] border-neutral-300  py-2 items-center flex justify-between">
+      <div className="content border-t-[1px] border-neutral-300  py-2 items-center dark:border-zinc-600 flex justify-between">
         <div className="name  font-semibold text-xl px-4">
           <h1>Project1</h1>
         </div>
@@ -16,12 +16,12 @@ const ProjectCard = () => {
           </a>
         </div>
       </div>
-      <div className='h-auto p-3  flex flex-wrap border-t-[1px] border-neutral-200 gap-4 '>
+      <div className='h-auto p-3  flex flex-wrap border-t-[1px] border-neutral-200 dark:border-zinc-600 gap-4 '>
         {["HTML",
           "Tailwind CSS",
           "React.js",
           ].map((tech,index) =>(
-            <span key={index} className="border-[1px] border-neutral-300 m-1 w-fit p-1 flex items-center text-[10px] rounded-sm ">{tech}</span>
+            <span key={index} className="border-[1px] border-neutral-300 dark:border-zinc-400 m-1 w-fit p-1 flex items-center text-[10px] rounded-sm ">{tech}</span>
           ))}
       </div>
     </div>
