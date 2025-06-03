@@ -1,30 +1,44 @@
-import { Sun, Moon } from "lucide-react";
-import { useState, useEffect } from "react";
+import {useState , useEffect} from 'react'
+import { Moon, Sun } from 'lucide-react'
 
-const DarkBtn = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
+function DarkBtn() {
+    const [darkMode, setDarkMode] = useState(() => {
+        // Initialize state from localStorage or default to light mode
+        return localStorage.getItem('theme') === 'dark';
+      });
+      useEffect(() => {
+        const root = window.document.documentElement;
+    
+        if (darkMode) {
+          root.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          root.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        }
+      }, [darkMode]);
+    
+      const toggleDarkMode = () => {
+        setDarkMode((prevMode) => !prevMode);
+      };
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark"); 
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [darkMode]);
+    
 
+    
   return (
-    <button
-      onClick={() => setDarkMode(!darkMode)}
-      className="p-2 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded flex items-center gap-2"
-    >
-      {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-      {darkMode ? "Light Mode" : "Dark Mode"}
-    </button>
-  );
-};
+    
+      <div 
+      onClick={toggleDarkMode}
+      className='cursor-pointer flex border-[1px] dark:border-neutral-600/30 items-center  p-2 border-neutral-200 rounded-lg bg-white dark:bg-zinc-900  dark:text-white'>
+        
+        {darkMode ? (
+          <Moon className="w-4 h-4 text-neutral-200" />
+        ) : (
+          <Sun className="w-4 h-4 text-neutral-900" />
+        )}
+      </div>
+    
+  )
+}
 
 export default DarkBtn;

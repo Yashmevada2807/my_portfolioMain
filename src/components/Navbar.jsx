@@ -12,7 +12,7 @@ const Navbar = () => {
     }, [location.pathname]);
 
     return (
-        <nav className=" p-3 bg-black dark:bg-gray-950 dark:border-b dark:border-zinc-500">
+        <div className=" p-3 w-full bg-white dark:bg-gray-950 dark:border-b dark:border-zinc-500">
             <div className="text-white flex justify-between items-center">
                 <div className="logo w-full sm:w-auto flex  justify-center sm:justify-start  font-bold text-2xl px-3 ">Yash.me
                 </div>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className=" flex max-sm:hidden  p-2 gap-4">
-                    <DarkBtn/>
+                    {/* <DarkBtn/> */}
                     <Link
                         to="/Contacts"
                         onClick={() => setActiveLink("/Contacts")}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
                 {/* for hamburger functionality  */}
                 {isOpen && (
-                    <div className="absolute top-14 border-t right-0 flex flex-col w-full bg-black text-center items-center duration-300 sm:hidden ">
+                    <div className="absolute top-15 border-t right-0 flex flex-col w-full bg-black text-center items-center duration-300 sm:hidden ">
                         <Link to="/" className="py-2 text-white hover:text-gray-400 border-b-[1px] w-full  "onClick={() => setIsOpen(false)} >Home</Link>
                         <Link to="/aboutme" className="py-2 text-white hover:text-gray-400 border-b-[1px] w-full"onClick={() => setIsOpen(false)} >AboutMe</Link>
                         <Link to="/myprojects" className="py-2 text-white hover:text-gray-400 border-b-[1px] w-full" onClick={() => setIsOpen(false)}>MyProjects</Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
-        </nav>
+        </div>
     );
 };
 

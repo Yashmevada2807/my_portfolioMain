@@ -7,11 +7,11 @@ const Home = () => {
         <div className=" w-full overflow-hidden ">
             <div className="main w-full  border-zinc-500 justify-center items-center sm:flex flex-col sm:flex-row py-2  h-auto">
                 <div className="info  md:w-[50%] h-auto flex flex-col justify-center items-center text-center px-5 md:px-8  py-6 md:py-10 ">
-                    <div className="block  h-full w-auto md:px-2 py-4">
-                        <div className="intro font-bold text-3xl sm:text-4xl md:text-5xl px-6 md:px-10 dark:text-zinc-300 py-5 text-center max-w-lg ">
+                    <div className="block   h-full w-auto md:px-2 py-4">
+                        <div className="intro  font-bold text-3xl sm:text-4xl md:text-5xl px-6 md:px-10 dark:text-zinc-300 py-5 text-center max-w-lg ">
                             Hello,I'm Yash, frontEnd Developer based in USA.
                         </div>
-                        <div className="about text-sm md:py-2 text-center px-6 text-gray-600 max-w-md">
+                        <div className="about text-sm md:py-2 block  text-center px-6 md:px-10 text-gray-600 max-w-lg">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odit enim quas, quis dolores iure blanditiis delectus nostrum fuga sed unde ipsa consequatur dolorum dolore!
                         </div>
                     </div>
